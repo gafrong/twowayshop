@@ -6,13 +6,15 @@
     <% @listings.each do |listing| %>
       <div class="col-md-3">
         <div class="thumbnail">
-          <%= image_tag listing.image.url(:medium) %>
-          <h3><%= listing.name %></h3>
-          <p><%= listing.description %></p>
-          <%= number_to_currency(listing.price) %>
-          <%= link_to 'Show', listing, class: "btn btn-link" %>
-          <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %>
-          <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
+          <div class="caption">
+            <%= image_tag listing.image.url(:medium) %>
+            <h3><%= listing.name %></h3>
+            <p><%= listing.description %></p>
+            <%= number_to_currency(listing.price) %>
+            <%= link_to 'Show', listing, class: "btn btn-link" %>
+            <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %>
+            <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
+          </div>
         </div>
       </div>
     </div>
