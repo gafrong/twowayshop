@@ -39,3 +39,14 @@ body {
     font-size: 18px;
   }
 }
+.jumbotron {
+  background-image: url('https://dl.dropboxusercontent.com/s/k406njb6tofj4t7/jumbotron.jpg?dl=0');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 340px;
+  h1, h2 {
+    font-family: guardian-egyptt, georgia, serif;
+  }
+}
