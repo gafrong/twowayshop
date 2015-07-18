@@ -1,14 +1,16 @@
-// @import "bootstrap-sprockets";
+@import "bootstrap-sprockets";
 @import "bootstrap";
-
-.center {
-  text-align: center;
-}
 
 body {
   background-color: #F5F5F1;
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
+}
+.center {
+  text-align: center;
+}
+.white {
+  color: #fff;
 }
 .navbar-default {
   background-color: #EFEFEB;
