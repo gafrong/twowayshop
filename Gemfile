@@ -1,3 +1,4 @@
+source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.2'
@@ -10,10 +11,10 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 gem "paperclip", "~> 4.3"
+gem "paperclip-dropbox", ">= 1.1.7"
 
 gem "figaro"
 gem 'devise'
-gem "paperclip-dropbox", ">= 1.1.7"
 gem 'stripe'
 
 # Use ActiveModel has_secure_password
