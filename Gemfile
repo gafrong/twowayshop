@@ -1,4 +1,4 @@
-gitsource 'https://rubygems.org'
+
 
 gem 'rails', '4.2.2'
 gem 'sass-rails', '~> 5.0'
@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
-gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'bootstrap-sass', '~> 3.3.5'
 gem "paperclip", "~> 4.3"
 
 gem "figaro"
