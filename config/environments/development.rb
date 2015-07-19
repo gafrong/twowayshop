@@ -39,4 +39,13 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # config.after_initialize do 
+  #   ActiveMerchant::Billing::Base.mode = :test
+  #     ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new{
+  #       login: "gafrong-facilitator_api1.gmail.com"
+  #       password: "7E4GMKV3BSAW92NB"
+  #       signature: "Ax.bX52a5Ul8awSw8UcX0ORK14yjA4O5sSzmS-quHdqKiQDJA-GZIspV"
+  #     }
+  # end
 end

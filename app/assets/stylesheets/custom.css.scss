@@ -41,7 +41,11 @@ body {
     font-size: 18px;
   }
 }
-.jumbotron {
+.navbar {
+  margin-bottom: 0;
+}
+.landing-image {
+  padding: 15px;
   background-image: url('https://dl.dropboxusercontent.com/s/k406njb6tofj4t7/jumbotron.jpg?dl=0');
   -webkit-background-size: cover;
   -moz-background-size: cover;

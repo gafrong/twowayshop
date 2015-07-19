@@ -7,10 +7,18 @@ class ListingsController < ApplicationController
     @listings = Listing.where(user: current_user).order("created_at DESC")
   end
 
+  def bankdetail 
+
+  end
+
   # GET /listings
   # GET /listings.json
   def index
-    @listings = Listing.all.order("created_at DESC")
+    if !params[:search].present?
+      @listings = Listing.all.order("created_at DESC")
+    else
+      @listings = Listing.where("name ilike ?", "%#{params[:search]}%")
+    end
   end
 
   # GET /listings/1
