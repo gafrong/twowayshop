@@ -67,12 +67,20 @@ body {
   }
 }
 .navbar {
-    background: transparent;
+  background: transparent;
   border-bottom: none;
   z-index: 1000;
   top: 20px;
   width: 100%;
   position: absolute;
+  .listing {
+    padding: 5px 20px;
+    margin-top: 9px;
+    margin-right: 10px;
+    background-color: tomato;
+    border-radius: 0;
+    border: none;
+  }
 }
 .landing-image {
   padding: 15px;
@@ -105,7 +113,7 @@ body {
     background-color: tomato;
     border: #333;
     &:hover {
-      background-color: #ea6004;
+      background-color: #eee;
     }
   }
 }

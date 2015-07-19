@@ -35,8 +35,11 @@
           </ul>
         </li>
       <% else %>
-        <li><%= link_to "Sign Up", new_user_registration_path %></li>
-        <li><%= link_to "Sign In", new_user_session_path %></li>
+        <li class="white"><%= link_to "Sign Up", new_user_registration_path %></li>
+        <li class="white"><%= link_to "Sign In", new_user_session_path %></li>
+      <% end %>
+      <% if user_signed_in? %>
+        <li><%= link_to 'List Your Sale', new_listing_path, class: "btn btn-md btn-primary listing", data: {no_turbolink: true} %></li>
       <% end %>
     </ul>
   </div><!-- /.navbar-collapse -->
