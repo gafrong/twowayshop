@@ -2,12 +2,28 @@
 @import "bootstrap";
 
 body {
-  background-color: #F5F5F1;
+  background-color: #efe6d7;
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
+  // font-size: 16px;
 }
 .center {
   text-align: center;
+}
+.navbar-brand {
+  font-size: 24px;
+}
+.main-title {
+  font-size: 70px;
+}
+.sub-title {
+  font-size: 30px;
+}
+.top100 {
+  margin-top: 100px;
+}
+.top150 {
+  margin-top: 150px;
 }
 .white {
   color: #fff;
@@ -27,6 +43,9 @@ body {
   font-weight: bold;
   color: #0192B5;
 }
+.sub-heading {
+  padding: 25px;
+}
 .col-md-3:nth-child(4n+1) {
   clear: left;
 }
@@ -42,17 +61,35 @@ body {
   }
 }
 .navbar {
-  margin-bottom: 0;
+    background: transparent;
+  border-bottom: none;
+  z-index: 1000;
+  top: 20px;
+  width: 100%;
+  position: absolute;
 }
 .landing-image {
   padding: 15px;
-  background-image: url('https://dl.dropboxusercontent.com/s/k406njb6tofj4t7/jumbotron.jpg?dl=0');
+  background-image: url('https://dl.dropboxusercontent.com/s/6f8isrr4753y42f/belong.png?dl=0');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 340px;
-  h1, h2 {
-    font-family: guardian-egyptt, georgia, serif;
+  min-height: 500px;
+}
+
+// search form on landing page
+.form-inline {
+  &.main-search {
+    margin-top: 120px;
+  }
+  .height50 {
+    height: 50px;
+  }
+  .height100 {
+    height: 100px;
+  }
+  .input-lg {
+    min-width: 320px;
   }
 }
