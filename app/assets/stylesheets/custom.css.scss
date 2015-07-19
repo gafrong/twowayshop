@@ -19,6 +19,9 @@ body {
 .sub-title {
   font-size: 30px;
 }
+.top50 {
+  margin-top: 50px;
+}
 .top100 {
   margin-top: 100px;
 }
@@ -27,6 +30,9 @@ body {
 }
 .white {
   color: #fff;
+}
+.tomato {
+  color: tomato;
 }
 .navbar-default {
   background-color: #EFEFEB;
@@ -89,7 +95,17 @@ body {
   .height100 {
     height: 100px;
   }
-  .input-lg {
-    min-width: 320px;
+  .input-md {
+    min-width: 250px;
+    border-radius: 0;
+  }
+  #seek {
+    border-radius: 0;
+    color: #fff;
+    background-color: tomato;
+    border: #333;
+    &:hover {
+      background-color: #ea6004;
+    }
   }
 }
