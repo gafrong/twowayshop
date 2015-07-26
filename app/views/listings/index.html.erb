@@ -1,11 +1,11 @@
 <div class="landing-image center">
-  <h2 class="white top150 main-title">LIVE TO TRAVEL</h2>
-  <h4 class= "white sub-title">never feel ordinary</h4>
+  <h2 class="white top150 main-title">NOTHING ORDINARY</h2>
+  <h4 class= "white sub-title">something special by unique people</h4>
   
   <form class="form-inline center main-search">
       <%= form_tag listings_path, :method => 'get' do %>
         <div class="form-group">
-          <%= text_field_tag :search, params[:search], class: "form-control input-md height50", placeholder: "Where do you wish to go?" %>
+          <%= text_field_tag :search, params[:search], class: "form-control input-md height50", placeholder: "What would you like to find?" %>
         </div>
         <div class="form-group height50">
           <button type="submit" class="btn btn-md btn-default col-xs-12 height50" id="seek">Search</button>
@@ -23,7 +23,7 @@
     <div class="center">
       <div class="row">
         <% @listings.each do |listing| %>
-          <div class="col-md-3">
+          <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
               <%= link_to image_tag(listing.image.url), listing %>
               <div class="caption">
